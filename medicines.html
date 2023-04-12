@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon (3).ico">
+    <title>www.updatmedicine.com</title>
+    <style>
+        body {
+            background-color: #62CDFF;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .logo {
+            position: fixed;
+            height: 50px;
+            width: 50px;
+            margin-top: 20px;
+            margin-left: 70px;
+            float: left;
+        }
+
+        .divone {
+            height: 100px;
+            background-color: black;
+        }
+        .options {
+            margin-top: 0px;
+            text-align: center;
+            word-spacing: 20px;
+            margin-right: 330px;
+            float: left;
+            padding-top: 50px;
+            font-weight: bold;
+            height: 300px;
+        }
+        .icons {
+            position: relative;
+            height: 55px;
+            width: 55px;
+            margin-left: 170px;
+            float: left;
+        }
+        .container1 {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .myform {
+            margin-top: 50px;
+            font-size: 25px;
+            font-style: "Poppins", sans-serif;
+            text-align: left;
+            margin-left: 200px;
+        }
+
+
+        .btn-insert {
+            -webkit-border-radius: 8;
+            -moz-border-radius: 8;
+            border-radius: 8px;
+            font-family: Courier New;
+            color: BLACK;
+            font-size: 30px;
+            background: WHITE;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            position: relative;
+            margin-left: 105px;
+            
+        }
+
+
+        .btn-insert:hover {
+            background: #e6e8f2;
+            text-decoration: none;
+        }
+
+        
+        .btn-view {
+            -webkit-border-radius: 4;
+            -moz-border-radius: 4;
+            border-radius: 4px;
+            font-family: Courier New;
+            color: BLACK;
+            font-size: 30px;
+            background: WHITe;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            margin-left: 120px;
+            margin-right: 30px;
+        }
+
+        .btn-view:hover {
+            background: #e8f1f7;
+            text-decoration: none;
+        }
+        .btn-delete {
+            -webkit-border-radius: 8;
+            -moz-border-radius: 8;
+            border-radius: 8px;
+            font-family: Courier New;
+            color: BLACK;
+            font-size: 30px;
+            background: WHITE;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            margin-left: 65px;
+            
+            
+        }
+
+        .btn-delete:hover {
+            background: #e6e8f2;
+            text-decoration: none;
+        }
+
+
+        .btn-update {
+            -webkit-border-radius: 4;
+            -moz-border-radius: 4;
+            border-radius: 4px;
+            font-family: Courier New;
+            color: BLACK;
+            font-size: 30px;
+            background: white;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            margin-left: 80px;
+            
+        }
+
+        .btn-update:hover {
+            background: #e8f1f7;
+            text-decoration: none;
+        }
+        .back{
+            margin-top: 20px;
+            line-height: 60px;
+            margin-left: 180px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #62CDFF;
+            color: black;
+            height: 60px;
+            border-radius:10px;
+            padding-left: 10px;
+            padding-right: 10px;
+         }
+         .logout{
+            margin-top: 20px;
+            line-height: 60px;
+            margin-left: 1180px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #62CDFF;
+            color: black;
+            height: 60px;
+            border-radius:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: large;
+            font-style:Courier New ;
+         }
+    </style>
+</head>
+
+<body>
+    <div class=divone>
+        <img class="logo" src="letter-m.png" alt="logo">
+        <a class=back href="index.html"> HOME</a>
+        <a class ="logout" href="admin.html">Log out</a>
+    </div>
+    <div class="container1">
+        <div class="myform">
+            <form >
+                <label>Enter Medicine ID :</label>
+                <input type="text" size="50" height="20" required>
+                <br>
+                <br>
+                <label>Enter Medicine Name : </label>
+                <input type="text" size="45" required>
+                <br>
+                <br>
+                <label>Enter Medicine Description :</label>
+                <textarea name="name" rows="10" cols="30"></textarea>
+                <br>
+                <br>
+                <label>Enter Medicine Quantity: </label>
+                <input type="text" size="45" required>
+                <br>
+                <br>
+                <label>Enter Medicine Price : </label>
+                <input type="text" size="50" required>
+                <br>
+                <br>
+                <legend>
+                    Availability:<span aria-label="required">*</span></legend>
+                  <input type="radio"  name="AVAILABLE" > Available
+                  <input type="radio"  name="AVAILABLE" >Not Available
+                 
+               
+            </form>
+
+        
+
+            <div class="options">
+                <img class=" icons  " src="plus-sign.png" alt="">
+                <img class=" icons " src="file.png" alt="">
+                <img class=" icons  " src="remove.png" alt="">
+                <img class=" icons" src="loop.png" alt="">
+           <br>
+           <br>
+         <br>
+
+                <a class="btn-insert" href="">ADD</a>
+                <a class="btn-view" href="">VIEW</a>
+                <a class="btn-delete" href="">REMOVE</a>
+                <a class="btn-update" href="">UPDATE</a>
+
+
+            </div>
+</body>
+
+</html>
